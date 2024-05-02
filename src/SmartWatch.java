@@ -13,7 +13,7 @@ public class SmartWatch {
             pasos.add(datos);
         }
 
-        ClearSteps(pasos);
+        clearSteps(pasos);
 
         int suma = 0;
 
@@ -26,7 +26,7 @@ public class SmartWatch {
 
     }
 
-    public static void ClearSteps(ArrayList<Integer> pasos) {
+    public static void clearSteps(ArrayList<Integer> pasos) {
         for (int i = 0; i < pasos.size(); i++) {
             int datoPaso = pasos.get(i);
 
