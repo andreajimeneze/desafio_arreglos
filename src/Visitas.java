@@ -9,13 +9,11 @@ public class Visitas {
             return;
         }
 
-        int [] registroVisitas = new int [args.length];
         ArrayList<Integer> visitas = new ArrayList<>();
-
-        for(int i = 0; i < registroVisitas.length; i++) {
-            registroVisitas[i] = Integer.parseInt(args[i]);
-            visitas.add(registroVisitas[i]);
-            System.out.println(visitas);
+        for(int i = 0; i < args.length; i++) {
+            int valor = Integer.parseInt(args[i]);
+            visitas.add(valor);
+//            System.out.println(visitas);
         }
 
         promedio(visitas);
@@ -28,7 +26,7 @@ public class Visitas {
         }
 
         double promedio = (double) suma  / visitas.size();
-        DecimalFormat df = new DecimalFormat("###.##");
+        DecimalFormat df = new DecimalFormat("#.##");
 
 
         System.out.println("El promedio de visitas es: " + df.format(promedio));
